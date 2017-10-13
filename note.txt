@@ -1,0 +1,11 @@
+A smart way to hide plain text by combining the characters from other sentences.
+
+It should be much easier if you just debug it. But I use IDA and is not able to run debugger like windbg or ollydbg, so I still use IDA. I can figure a way out.
+
+To prevent some awful mistakes, I write an easy program to get the password.
+If you just look at the first block of code, you will get this string:
+biKqfrd\m
+But when you type it into the program, it tells you that the password is wrong.
+Actually, another block of code rewrites the values and the new string should be:
+biKq_l4gz
+And then it tells you that it is the correct password.
